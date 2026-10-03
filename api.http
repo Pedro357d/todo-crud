@@ -1,0 +1,30 @@
+### 1. Criar uma tarefa
+POST http://localhost:8080/tarefas
+Content-Type: application/json
+
+{
+    "nome": "Fazer projeto",
+    "descricao": "Desenvolver o projeto de To-Do em Spring Boot",
+    "status": "PENDENTE",
+    "observacoes": "Projeto avaliativo"
+}
+
+### 2. Listar todas as tarefas
+GET http://localhost:8080/tarefas
+
+### 3. Buscar tarefa por ID
+GET http://localhost:8080/tarefas/id
+
+### 4. Alterar tarefa
+PUT http://localhost:8080/tarefas/id
+Content-Type: application/json
+
+{
+    "nome": "Fazer projeto",
+    "descricao": "Desenvolver o projeto de To-Do em Spring Boot",
+    "status": "CONCLUIDA",
+    "observacoes": "Projeto finalizado"
+}
+
+### 5. Excluir tarefa
+DELETE http://localhost:8080/tarefas/id
